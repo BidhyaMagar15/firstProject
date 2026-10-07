@@ -1,6 +1,7 @@
 from rest_framework import serializers
 
 from .models import Task
+from .models import Activity
 
 class TaskSerializer(serializers.ModelSerializer):
     class Meta:
@@ -8,4 +9,8 @@ class TaskSerializer(serializers.ModelSerializer):
         fields="__all__"
 
 
+class ActivitySerializer(serializers.ModelSerializer):
+    class Meta:
+        model=Activity
+        fields="__all__"
 
