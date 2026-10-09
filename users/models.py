@@ -4,6 +4,7 @@ class User(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField(unique=True)
     age = models.IntegerField()
+    phn = models.IntegerField(null=True)
 
     def __str__(self):
         return self.name
